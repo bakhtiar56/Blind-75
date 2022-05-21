@@ -28,7 +28,7 @@ Output: [1,2]
         #compute differencve between each value and target
         #if difference in hashmap, return the value index and difference index
         #else store the value index pair in hashmap
-        store hashmap for every value
+        
         
         a=nums
         
@@ -64,11 +64,13 @@ Output: [1,2]
 #             else:
 #                 return right,mid
 #         arr,offset=binary_search(a,target)
-        # print(arr)
+        
         arr=a
-        # print(arr)
+        
         for idx,x in enumerate(arr):
             try:
+              #if diff in hashmap, return the two indices of diff and curr value
+              #else store the curr value, index pair in hashmap
                 
                 inter=target-x
                 y=hash_map[inter]
